@@ -7,25 +7,22 @@ svg {
 
 
 svg .state {
-  fill: #e3e3e3;
-  stroke: #333;
-  stroke-width: 0.5;
+  fill: #E5EDFE  ;
+  stroke: #FFFFFF  ;
+  stroke-width: 1;
 }
 
-.city {
-  fill: blue;
-  stroke: #333;
-}
+
 
 .county {
-  fill: #e3e3e3;
-  stroke: #333;
-  stroke-width: 0.5;
+  fill: #E5EDFE  ;
+  stroke: #FFFFFF  ;
+  stroke-width: 1;
 }
 
 .county:hover {
   stroke-width: 1px;
-  fill: aqua;
+  fill: #2e3dc833;
   cursor: pointer;
 }
 
@@ -34,10 +31,14 @@ svg .state {
   stroke-width: 2px;
   fill: blue;
 }
-
+.mac{
+  stroke: #fff;
+  stroke-width: 2px;
+  fill: red;
+}
 svg .state:hover {
   stroke-width: 1px;
-  fill: aqua;
+  fill: #2e3dc833;
   cursor: pointer;
 }
 
