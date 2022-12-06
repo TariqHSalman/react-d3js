@@ -218,8 +218,6 @@ function GeoChart({ data, starbucks, county }) {
           console.log(error);
         });
 
-
-
   }, [file])
   return (
     <div>
