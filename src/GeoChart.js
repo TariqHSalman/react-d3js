@@ -324,6 +324,7 @@ function GeoChart({ data, starbucks, county }) {
         <br />
         if you have more than one file just put the first link in the input felid after you see the points on the map  replace the input felid with the new link it will add the new points to the existing ones
         to zoom double click or use the mouse wheel
+
       </div>
     </div>
   );
