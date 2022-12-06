@@ -7,16 +7,16 @@ svg {
 
 
 svg .state {
-  fill: #E5EDFE  ;
-  stroke: #FFFFFF  ;
-  stroke-width: 1;
+  fill: #E5EDFE;
+  stroke: #FFFFFF;
+  stroke-width: 2;
 }
 
 
 
 .county {
-  fill: #E5EDFE  ;
-  stroke: #FFFFFF  ;
+  fill: #E5EDFE;
+  stroke: #FFFFFF;
   stroke-width: 1;
 }
 
@@ -31,11 +31,13 @@ svg .state {
   stroke-width: 2px;
   fill: blue;
 }
-.mac{
+
+.mac {
   stroke: #fff;
   stroke-width: 2px;
   fill: red;
 }
+
 svg .state:hover {
   stroke-width: 1px;
   fill: #2e3dc833;
@@ -66,4 +68,52 @@ video {
   right: 0;
   top: auto;
   width: 100%;
+}
+
+
+
+
+.pointContainer {
+  text-anchor: middle;
+  font-family: inherit;
+
+
+}
+
+.cityName {
+  fill: #030852;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.centeredText {
+  dominant-baseline: middle;
+  font-size: 12px;
+  fill: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.point,
+.rectPoint {
+  cursor: pointer;
+}
+
+circle {
+  stroke-width: 2px;
+  stroke: #fff;
+}
+
+.cluster {
+  cursor: pointer;
+  stroke-width: 10px;
+}
+
+.pointContainer text {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }

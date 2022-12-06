@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://TariqHSalman.github.io/react-d3js",
   "dependencies": {
+    "axios": "^0.21.4",
     "d3": "^7.3.0",
     "ml5": "^0.10.1",
     "react": "^16.10.2",

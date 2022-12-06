@@ -10,11 +10,8 @@ import "./App.css";
 function App() {
   return (
     <React.Fragment>
-      <h2>World Map with d3-geo</h2>
       <GeoChart data={data} starbucks={starbucks} county={county} />
-      <h2>Select property to highlight</h2>
 
-      {/* <Video /> */}
     </React.Fragment>
   );
 }
