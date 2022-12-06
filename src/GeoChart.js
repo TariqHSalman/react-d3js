@@ -209,14 +209,14 @@ function GeoChart({ data, starbucks, county }) {
 
 
   useEffect(() => {
-
-    axios.get(file)
-      .then(function (response) {
-        setFileData((f) => [...f, response.data])
-      }
-      ).catch((error) => {
-        console.error(error);
-      });
+    if (file.length > 5)
+      axios.get(file)
+        .then(function (response) {
+          setFileData((f) => [...f, response.data])
+        }
+        ).catch((error) => {
+          console.log(error);
+        });
 
 
 
@@ -260,9 +260,9 @@ function GeoChart({ data, starbucks, county }) {
             <div style={{ display: "flex", justifyContent: "center", }}>
 
               <input type="checkbox" id="mac" name="mac" onClick={() => { setMac(m => !m) }} />
-              <label for="mac" > show mac</label>
+              <label  > show mac</label>
             </div>
-            <label for="macType">point type</label>
+            <label >point type</label>
 
             <select name="macType" id="macType" onChange={(v) => { setMacType(v.target.value) }}>
               <option value="point">point</option>
@@ -278,9 +278,9 @@ function GeoChart({ data, starbucks, county }) {
             <div style={{ display: "flex", justifyContent: "center", }}>
 
               <input checked={isStar} type="checkbox" id="star" name="star" onClick={() => { setStar(m => !m) }} />
-              <label for="star"> show starbucks</label>
+              <label > show starbucks</label>
             </div>
-            <label for="starType">point type</label>
+            <label >point type</label>
 
             <select name="starType" id="starType" onChange={(v) => { setStarType(v.target.value) }}>
               <option value="point">point</option>
@@ -293,12 +293,12 @@ function GeoChart({ data, starbucks, county }) {
 
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", background: "green", marginTop: "15px" }}>
             <div style={{ display: "flex", justifyContent: "center", flexDirection: "column" }}>
-              <label for="star"> File url</label>
+              <label> File url</label>
               <input style={{ margin: "5px" }} id="file" name="file" onChange={(v) => {
                 setFile(v.target.value)
               }} />
             </div>
-            <label for="filetype ">point type</label>
+            <label>point type</label>
             <select name="filetype" id="filetype" onChange={(v) => { setFileType(v.target.value) }}>
               <option value="point">point</option>
               <option value="pwta">point with text above</option>
